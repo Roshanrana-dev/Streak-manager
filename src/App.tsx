@@ -31,7 +31,7 @@ const XP_PER_MINUTE = 10;
 const XP_PER_CHECKIN = 500; // Equivalent to a 50min session
 const DEFAULT_FOCUS_TIME = 25 * 60; 
 
-exportexport default function App() {
+export  default function App() {
   const [skills, setSkills] = useState<Skill[]>(() => {
     const saved = localStorage.getItem('skill-streaks-v3');
     if (saved) return JSON.parse(saved);
